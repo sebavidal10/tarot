@@ -1,0 +1,9 @@
+.tarot-card {
+  text-align: center;
+  margin: 10px;
+}
+
+.tarot-card img {
+  width: 100px;
+  height: 150px;
+}
