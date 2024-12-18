@@ -4,10 +4,8 @@ Este proyecto es una aplicación web desarrollada en React que permite a los usu
 
 ## Características
 
-- **Gestión de cartas:** Agrega, edita y organiza cartas de tarot.
 - **Lecturas personalizadas:** Crea tiradas de tarot únicas y visualízalas fácilmente.
-- **Interfaz intuitiva:** Diseño amigable para todos los niveles de experiencia.
-- **Exploración visual:** Navega y aprende sobre las cartas de tarot de manera dinámica.
+- **Interfaz intuitiva:** Diseño amigable para todos los niveles de experiencia. (WIP)
 
 ## Instalación
 
