@@ -1,42 +1,52 @@
 # Tarot App
 
-Este proyecto es una aplicación web desarrollada en React que permite a los usuarios gestionar cartas de tarot y realizar lecturas personalizadas. Ideal para explorar el tarot de manera interactiva y visual.
+App web para hacer lecturas de tarot usando cartas generadas con IA. Es un proyecto personal en desarrollo, así que algunas cosas pueden estar rotas o a medio hacer 🚧
 
-## Características
+## Qué hace
 
-- **Lecturas personalizadas:** Crea tiradas de tarot únicas y visualízalas fácilmente.
-- **Interfaz intuitiva:** Diseño amigable para todos los niveles de experiencia. (WIP)
+- Muestra cartas de tarot generadas con IA
+- Permite hacer tiradas básicas
+- Las cartas siguen una plantilla visual común
+- Por ahora solo tiene la tirada de 3 cartas (pasado/presente/futuro)
 
-## Instalación
+## Tecnologías
 
-1. Clona este repositorio:
+- React para el frontend
+- JavaScript
+- CSS normal y algo de tailwindcss (nada fancy)
+- Las imágenes están hechas con Stable Diffusion
 
-   ```bash
-   git clone https://github.com/tu-usuario/tarot-app.git
-   ```
+## Cómo usarlo
 
-2. Navega al directorio del proyecto:
+1. Clona el repo:
 
-   ```bash
-   cd tarot-app
-   ```
+```bash
+git clone https://github.com/tu-usuario/tarot-app.git
+```
 
-3. Instala las dependencias:
-   ```bash
-   npm install
-   ```
-4. Inicia la aplicación:
-   ```bash
-   npm start
-   ```
+2. Instala todo:
 
-## Uso
+```bash
+cd tarot-app
+npm install
+```
 
-1. Abre la aplicación en [http://localhost:3000](http://localhost:3000).
-2. Explora las cartas de tarot, crea tiradas y personaliza tus lecturas.
+3. Arranca el proyecto:
 
-## Tecnologías Utilizadas
+```bash
+npm start
+```
 
-- React
-- JavaScript (ES6+)
-- CSS para el diseño
+4. Abre [http://localhost:3000](http://localhost:3000) y ya puedes jugar con las cartas
+
+## Lo que viene después
+
+Tengo pensado añadir:
+
+- Más tipos de tiradas
+- Guardar las lecturas
+- Que se vean bien en móvil
+
+## Licencia
+
+MIT - haz lo que quieras con el código
