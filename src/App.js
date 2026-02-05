@@ -3,14 +3,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 import ReadingPage from './pages/ReadingPage/ReadingPage';
 
+import { ThemeProvider } from './context/ThemeContext';
+
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/reading" element={<ReadingPage />} />
-      </Routes>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/reading" element={<ReadingPage />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 };
 

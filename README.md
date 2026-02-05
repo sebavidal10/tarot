@@ -1,52 +1,85 @@
-# Tarot App
+# Tarot Arcana: Lecturas del Abismo 🧛‍♂️🔮
 
-App web para hacer lecturas de tarot usando cartas generadas con IA. Es un proyecto personal en desarrollo, así que algunas cosas pueden estar rotas o a medio hacer 🚧
+Aplicación web de Tarot inmersiva con una estética gótica oscura y vampírica. Utiliza Inteligencia Artificial (Claude de Anthropic) para interpretar tu destino, o invoca un oráculo de respaldo cuando la conexión con el éter digital falla.
 
-## Qué hace
+![Tarot Arcana](https://placeholder-image-url.com)
 
-- Muestra cartas de tarot generadas con IA
-- Permite hacer tiradas básicas
-- Las cartas siguen una plantilla visual común
-- Por ahora solo tiene la tirada de 3 cartas (pasado/presente/futuro)
+> [!WARNING]
+> **NOTA DE SEGURIDAD IMPORTANTE**
+> Este proyecto realiza llamadas a la API de Anthropic **desde el cliente (frontend)**.
+>
+> - **Uso Local**: Es seguro en `localhost` siempre que no subas el archivo `.env`.
+> - **Producción**: NO despliegues esto públicamente sin un backend/proxy intermediario, o expondrás tu API Key.
 
-## Tecnologías
+## ✨ Características Principales
 
-- React para el frontend
-- JavaScript
-- CSS normal y algo de tailwindcss (nada fancy)
-- Las imágenes están hechas con Stable Diffusion
+### 🌓 Dualidad Visual (Temas)
 
-## Cómo usarlo
+Cambia entre dos estados del alma desde la barra de navegación:
 
-1. Clona el repo:
+- **Sombra (Void Gothic)**: Fondo negro obsidiana, bordes rojo sangre, oscuridad profunda.
+- **Luz (Vampiric Marble)**: Blancos de mármol antiguo, grises piedra y contrastes sangrientos.
 
-```bash
-git clone https://github.com/tu-usuario/tarot-app.git
-```
+### 📜 Tipografía Maldita
 
-2. Instala todo:
+- **Títulos**: _Playfair Display SC_ - Estilo elegante y solemne. Reminiscencia de las portadas de novelas góticas del siglo XIX (estilo Drácula).
+- **Textos**: _Crimson Text_ - Serif clásica para una lectura cómoda, como inscripciones en libros viejos.
 
-```bash
-cd tarot-app
-npm install
-```
+### 🔮 Modo Demo Místico
 
-3. Arranca el proyecto:
+¿No tienes créditos en la API? ¿Sin conexión?
+El sistema detecta automáticamente los fallos y activa el **"Oráculo de Respaldo"**, permitiéndote experimentar la interfaz completa con lecturas simuladas poéticas.
 
-```bash
-npm start
-```
+### 🤖 Inteligencia Artificial
 
-4. Abre [http://localhost:3000](http://localhost:3000) y ya puedes jugar con las cartas
+Conectado a **Claude 3 (Anthropic)** con un "System Prompt" diseñado para actuar como una tarotista mística, empática y solemne.
 
-## Lo que viene después
+### 🖼️ Arte Arcano (IA)
 
-Tengo pensado añadir:
+Todas las ilustraciones de los Arcanos fueron generadas utilizando **Inteligencia Artificial** (Stable Diffusion), evocando el estilo de grabados antiguos y surrealismo oscuro para potenciar la atmósfera mística.
 
-- Más tipos de tiradas
-- Guardar las lecturas
-- Que se vean bien en móvil
+## 🛠️ Tecnologías
 
-## Licencia
+- **Core**: React 18, React Router.
+- **Estilos**: TailwindCSS (con configuración avanzada de temas y `darkMode: 'class'`).
+- **Fuentes**: Google Fonts (Playfair Display SC, Crimson Text).
+- **Iconos**: Lucide React.
 
-MIT - haz lo que quieras con el código
+## 🚀 Instalación y Uso
+
+1. **Clonar**:
+
+   ```bash
+   git clone https://github.com/tu-usuario/tarot-app.git
+   ```
+
+2. **Instalar**:
+
+   ```bash
+   cd tarot-app
+   npm install
+   ```
+
+3. **Configurar (Opcional)**:
+   Crea un archivo `.env` en la raíz con tu API Key. Si no lo haces, la app funcionará en **Modo Demo**.
+
+   ```env
+   REACT_APP_ANTHROPIC_API_KEY=sk-ant-api03-...
+   ```
+
+4. **Invocar**:
+   ```bash
+   npm start
+   ```
+   Abre [http://localhost:3000](http://localhost:3000).
+
+## 🔮 Roadmap
+
+- [ ] Persistencia de lecturas en LocalStorage ("Grimorio Personal").
+- [ ] Efectos de sonido ambientales (lluvia, fuego crepitante).
+- [ ] Más tiradas complejas (Cruz Celta).
+- [ ] Backend en Next.js para asegurar la API Key.
+
+## 📄 Licencia
+
+MIT - El destino es libre, el código también.
