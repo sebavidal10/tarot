@@ -1,85 +1,82 @@
-# Tarot Arcana: El Altar del Destino 🧛‍♂️🔮
+# Tarot Arcana
 
-Una experiencia de Tarot inmersiva con una estética premium de "Altar Místico". Utiliza Inteligencia Artificial (Claude de Anthropic) para interpretar tu destino con una profundidad poética y sagrada.
+Una plataforma avanzada de consulta de Tarot que combina diseño premium con inteligencia artificial (Claude 3 de Anthropic) para ofrecer interpretaciones profundas y contextualizadas.
 
-![Tarot Arcana Premium](https://images.unsplash.com/photo-1572947650440-e8a93ef75fc7?auto=format&fit=crop&q=80&w=1200)
+## Características Principales
 
-## ✨ Características Premium
+### Interfaz de Lectura Estructurada
 
-### 🏛️ Layout de "Altar Sagrado"
+Diseño optimizado para la experiencia del usuario que simula una disposición profesional de cartas. Incorpora slots específicos para el análisis del **Pasado, Presente y Futuro**, garantizando una jerarquía visual clara y una navegación fluida.
 
-Diseño estructurado que simula una mesa de lectura real. Con slots fijos para el **Pasado, Presente y Futuro**, creando una jerarquía visual clara y una experiencia ritualística.
+### Sistema de Temas Dinámico
 
-### 🌓 Dualidad Atmosférica (Temas)
+La aplicación permite alternar entre dos entornos visuales diseñados para maximizar el contraste y la legibilidad:
 
-Inmuta la realidad desde la barra de navegación:
+- **Modo Dark (Void)**: Uso de negros profundos y acentos en rojo sangre sobre una interfaz de alto contraste.
+- **Modo Light (Marble)**: Estética minimalista basada en texturas de mármol blanco y tipografías oscuras.
 
-- **Sombra (Void Gothic)**: El abismo profundo. Negros obsidiana, brumas de sangre y destellos dorados.
-- **Luz (Vampiric Marble)**: El mármol de las catedrales. Texturas de piedra antigua, elegancia minimalista y claridad solemne.
+### Ritual de Revelación y Animaciones
 
-### 🃏 El Ritual de Revelación
+Implementación de flujos de interacción secuenciales para mejorar el engagement:
 
-Las cartas no se limitan a aparecer; se revelan:
+- **Selección de mazo**: Sistema de mazo dinámico con animaciones de respuesta al puntero.
+- **Auto-revelación**: Secuencia automatizada de rotación de cartas (3D flips) que gestiona el tiempo de lectura antes de mostrar la interpretación final.
 
-- **Selección Orgánica**: Un mazo dinámico en abanico que reacciona a tu presencia.
-- **Revelación Automática**: Una vez elegidas, las cartas se giran solas en secuencia, permitiendo al alma procesar cada etapa del destino antes de recibir la interpretación completa.
+### Gestión de Historial (Grimorio)
 
-### 📖 El Grimorio (Historial)
+Persistencia local de consultas anteriores. Permite a los usuarios acceder a sus registros históricos, recuperando tanto las cartas seleccionadas como las interpretaciones generadas por la IA.
 
-Tus consultas ya no se pierden en el viento. El sistema guarda tus lecturas localmente, permitiéndote consultar tu historial de destino en cualquier momento a través del icono de reloj.
+### Integración con IA
 
-### 🤖 Inteligencia Artificial Solemnizada
-
-Conectado a **Claude 3 (Anthropic)**. El oráculo ha sido instruido para hablar con un tono místico, empático y solemne, evitando respuestas genéricas y profundizando en la simbología oculta.
+Uso de la API de Anthropic para generar contenido dinámico. La IA está configurada para mantener un tono formal, analítico y empático, proporcionando interpretaciones que van más allá de los significados básicos del mazo.
 
 ---
 
-## 📜 Tipografía y Estética
+## Especificaciones de Diseño
 
-- **Invocaciones**: `Cinzel Decorative` - Para títulos imponentes que evocan inscripciones romanas y góticas.
-- **Revelaciones**: `Spectral` - Una serif elegante y moderna para una lectura clara de las interpretaciones.
-- **Acentos**: `MedievalSharp` - Detalles que refuerzan el estilo de manuscrito antiguo.
+- **Tipografía de Títulos**: `Cinzel Decorative` - Para una identidad visual fuerte y clásica.
+- **Cuerpo de Texto**: `Spectral` - Serif moderna optimizada para lectura prolongada.
+- **Componentes**: Diseñados con un enfoque en el minimalismo y el alto contraste.
 
-## 🛠️ Tecnologías
+## Stack Tecnológico
 
-- **Core**: React 18, React Router.
-- **Animaciones**: `Framer Motion` (Layout animations, AnimatePresence, 3D flips).
-- **Estilos**: TailwindCSS (Custom configuration, Dark Mode logic).
-- **Iconos**: Lucide React.
+- **Frontend**: React 18
+- **Animaciones**: Framer Motion (Transiciones de layout y efectos 3D)
+- **Estilos**: TailwindCSS (Configuración personalizada y gestión de temas)
+- **Iconografía**: Lucide React
 
-## 🚀 Instalación
+## Instalación
 
 1. **Clonar e Instalar**:
 
    ```bash
-   git clone https://github.com/tu-usuario/tarot-app.git
-   cd tarot-app
+   git clone https://github.com/sebavidal10/tarot.git
+   cd tarot
    npm install
    ```
 
 2. **Configurar API Key**:
-   Crea un archivo `.env` en la raíz (la app usa un servidor proxy local o modo demo si falta).
+   Crea un archivo `.env` en la raíz del proyecto:
 
    ```env
-   REACT_APP_ANTHROPIC_API_KEY=tu_key_aqui
+   REACT_APP_ANTHROPIC_API_KEY=tu_api_key
    ```
 
-3. **Ejecutar**:
+3. **Ejecutar en Desarrollo**:
    ```bash
    npm start
    ```
 
-## 🚀 Despliegue (GitHub Pages)
+## Despliegue (GitHub Pages)
 
-Para desplegar la aplicación en GitHub Pages:
+Para desplegar la aplicación:
 
-1. **Asegúrate de que el remoto origin es correcto**.
-2. **Ejecuta el comando de despliegue**:
-   ```bash
-   npm run deploy
-   ```
-   Esto creará una versión de producción en la carpeta `build` y la subirá a la rama `gh-pages` de tu repositorio.
+```bash
+npm run deploy
+```
 
-## 📄 Licencia
+Este comando genera el build de producción y lo publica automáticamente en la rama `gh-pages`.
 
-MIT - El destino es libre, el código también.
+## Licencia
+
+MIT License - El código es abierto para su uso y modificación.
