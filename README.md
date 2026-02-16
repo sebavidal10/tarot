@@ -1,84 +1,84 @@
-# Tarot Arcana: Lecturas del Abismo 🧛‍♂️🔮
+# Tarot Arcana: El Altar del Destino 🧛‍♂️🔮
 
-Aplicación web de Tarot inmersiva con una estética gótica oscura y vampírica. Utiliza Inteligencia Artificial (Claude de Anthropic) para interpretar tu destino, o invoca un oráculo de respaldo cuando la conexión con el éter digital falla.
+Una experiencia de Tarot inmersiva con una estética premium de "Altar Místico". Utiliza Inteligencia Artificial (Claude de Anthropic) para interpretar tu destino con una profundidad poética y sagrada.
 
-![Tarot Arcana](https://placeholder-image-url.com)
+![Tarot Arcana Premium](https://images.unsplash.com/photo-1572947650440-e8a93ef75fc7?auto=format&fit=crop&q=80&w=1200)
 
-> [!WARNING]
-> **NOTA DE SEGURIDAD IMPORTANTE**
-> Este proyecto realiza llamadas a la API de Anthropic **desde el cliente (frontend)**.
->
-> - **Uso Local**: Es seguro en `localhost` siempre que no subas el archivo `.env`.
-> - **Producción**: NO despliegues esto públicamente sin un backend/proxy intermediario, o expondrás tu API Key.
+## ✨ Características Premium
 
-## ✨ Características Principales
+### 🏛️ Layout de "Altar Sagrado"
 
-### 🌓 Dualidad Visual (Temas)
+Diseño estructurado que simula una mesa de lectura real. Con slots fijos para el **Pasado, Presente y Futuro**, creando una jerarquía visual clara y una experiencia ritualística.
 
-Cambia entre dos estados del alma desde la barra de navegación:
+### 🌓 Dualidad Atmosférica (Temas)
 
-- **Sombra (Void Gothic)**: Fondo negro obsidiana, bordes rojo sangre, oscuridad profunda.
-- **Luz (Vampiric Marble)**: Blancos de mármol antiguo, grises piedra y contrastes sangrientos.
+Inmuta la realidad desde la barra de navegación:
 
-### 📜 Tipografía Maldita
+- **Sombra (Void Gothic)**: El abismo profundo. Negros obsidiana, brumas de sangre y destellos dorados.
+- **Luz (Vampiric Marble)**: El mármol de las catedrales. Texturas de piedra antigua, elegancia minimalista y claridad solemne.
 
-- **Títulos**: _Playfair Display SC_ - Estilo elegante y solemne. Reminiscencia de las portadas de novelas góticas del siglo XIX (estilo Drácula).
-- **Textos**: _Crimson Text_ - Serif clásica para una lectura cómoda, como inscripciones en libros viejos.
+### 🃏 El Ritual de Revelación
 
-### 🔮 Modo Demo Místico
+Las cartas no se limitan a aparecer; se revelan:
 
-¿No tienes créditos en la API? ¿Sin conexión?
-El sistema detecta automáticamente los fallos y activa el **"Oráculo de Respaldo"**, permitiéndote experimentar la interfaz completa con lecturas simuladas poéticas.
+- **Selección Orgánica**: Un mazo dinámico en abanico que reacciona a tu presencia.
+- **Revelación Automática**: Una vez elegidas, las cartas se giran solas en secuencia, permitiendo al alma procesar cada etapa del destino antes de recibir la interpretación completa.
 
-### 🤖 Inteligencia Artificial
+### 📖 El Grimorio (Historial)
 
-Conectado a **Claude 3 (Anthropic)** con un "System Prompt" diseñado para actuar como una tarotista mística, empática y solemne.
+Tus consultas ya no se pierden en el viento. El sistema guarda tus lecturas localmente, permitiéndote consultar tu historial de destino en cualquier momento a través del icono de reloj.
 
-### 🖼️ Arte Arcano (IA)
+### 🤖 Inteligencia Artificial Solemnizada
 
-Todas las ilustraciones de los Arcanos fueron generadas utilizando **Inteligencia Artificial** (Stable Diffusion), evocando el estilo de grabados antiguos y surrealismo oscuro para potenciar la atmósfera mística.
+Conectado a **Claude 3 (Anthropic)**. El oráculo ha sido instruido para hablar con un tono místico, empático y solemne, evitando respuestas genéricas y profundizando en la simbología oculta.
+
+---
+
+## 📜 Tipografía y Estética
+
+- **Invocaciones**: `Cinzel Decorative` - Para títulos imponentes que evocan inscripciones romanas y góticas.
+- **Revelaciones**: `Spectral` - Una serif elegante y moderna para una lectura clara de las interpretaciones.
+- **Acentos**: `MedievalSharp` - Detalles que refuerzan el estilo de manuscrito antiguo.
 
 ## 🛠️ Tecnologías
 
 - **Core**: React 18, React Router.
-- **Estilos**: TailwindCSS (con configuración avanzada de temas y `darkMode: 'class'`).
-- **Fuentes**: Google Fonts (Playfair Display SC, Crimson Text).
+- **Animaciones**: `Framer Motion` (Layout animations, AnimatePresence, 3D flips).
+- **Estilos**: TailwindCSS (Custom configuration, Dark Mode logic).
 - **Iconos**: Lucide React.
 
-## 🚀 Instalación y Uso
+## 🚀 Instalación
 
-1. **Clonar**:
+1. **Clonar e Instalar**:
 
    ```bash
    git clone https://github.com/tu-usuario/tarot-app.git
-   ```
-
-2. **Instalar**:
-
-   ```bash
    cd tarot-app
    npm install
    ```
 
-3. **Configurar (Opcional)**:
-   Crea un archivo `.env` en la raíz con tu API Key. Si no lo haces, la app funcionará en **Modo Demo**.
+2. **Configurar API Key**:
+   Crea un archivo `.env` en la raíz (la app usa un servidor proxy local o modo demo si falta).
 
    ```env
-   REACT_APP_ANTHROPIC_API_KEY=sk-ant-api03-...
+   REACT_APP_ANTHROPIC_API_KEY=tu_key_aqui
    ```
 
-4. **Invocar**:
+3. **Ejecutar**:
    ```bash
    npm start
    ```
-   Abre [http://localhost:3000](http://localhost:3000).
 
-## 🔮 Roadmap
+## 🚀 Despliegue (GitHub Pages)
 
-- [ ] Persistencia de lecturas en LocalStorage ("Grimorio Personal").
-- [ ] Efectos de sonido ambientales (lluvia, fuego crepitante).
-- [ ] Más tiradas complejas (Cruz Celta).
-- [ ] Backend en Next.js para asegurar la API Key.
+Para desplegar la aplicación en GitHub Pages:
+
+1. **Asegúrate de que el remoto origin es correcto**.
+2. **Ejecuta el comando de despliegue**:
+   ```bash
+   npm run deploy
+   ```
+   Esto creará una versión de producción en la carpeta `build` y la subirá a la rama `gh-pages` de tu repositorio.
 
 ## 📄 Licencia
 

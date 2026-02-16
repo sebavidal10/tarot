@@ -1,31 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=MedievalSharp&family=Quattrocento:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #4a0000;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #8a0303;
+}
+
 body {
-  @apply font-serif transition-colors duration-500 ease-in-out;
-  @apply bg-marble-50 text-marble-900;
-  font-size: 18px;
+  @apply font-serif transition-colors duration-300 ease-in-out bg-[#050505] text-marble-100;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-/* Dark Mode Overrides */
+/* Slot Glow Effect - Sharper */
+.slot-glow {
+  @apply bg-white/5 dark:bg-black/40 border border-marble-200/10 dark:border-white/5;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark .slot-glow {
+  box-shadow: 0 0 15px rgba(138, 3, 3, 0.1);
+}
+
+/* Dark Mode: Deep Void */
 .dark body {
-  @apply bg-void-900 text-gray-200;
-  background-image: radial-gradient(
-    circle at 50% 50%,
-    #1a0505 0%,
-    #000000 100%
-  );
+  @apply bg-[#050505] text-gray-200;
+  background-image: none;
 }
 
-/* Light Mode Texture */
+/* Light Mode: Clean Marble */
 body:not(.dark) {
-  background-image:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E"),
-    radial-gradient(at 0% 0%, hsla(0, 0%, 95%, 1) 0, transparent 50%),
-    radial-gradient(at 100% 100%, hsla(0, 0%, 90%, 1) 0, transparent 50%);
+  @apply bg-white text-marble-900;
+  background-image: none;
 }
 
 h1,

@@ -24,13 +24,12 @@ module.exports = {
         },
       },
       fontFamily: {
-        // "Playfair Display SC" - elegant, classic vampire novel style
-        horror: ['"Playfair Display SC"', 'serif'],
-        // "Crimson Text" for the old book/cemetery inscription feel
-        serif: ['"Crimson Text"', 'serif'],
-        // Maintaining Cinzel for cleaner subtitles if needed
-        gothic: ['"Cinzel"', 'serif'],
+        horror: ['"Cinzel Decorative"', 'cursive'],
+        serif: ['"Spectral"', 'serif'],
+        gothic: ['"Quattrocento"', 'serif'],
+        accent: ['"MedievalSharp"', 'cursive'],
       },
+
       animation: {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'fade-in': 'fadeIn 1s ease-out forwards',
