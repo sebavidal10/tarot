@@ -8,7 +8,7 @@ import { ThemeProvider } from './context/ThemeContext';
 const App = () => {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/reading" element={<ReadingPage />} />
