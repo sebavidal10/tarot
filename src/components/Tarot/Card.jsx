@@ -38,7 +38,7 @@ const Card = ({ card, isRevealed, index, onClick, isSelected, inverted }) => {
         >
           <div className="w-full h-full relative overflow-hidden">
             <motion.img
-              src={card.image}
+              src={process.env.PUBLIC_URL + card.image}
               alt={card.name_es}
               initial={false}
               animate={{ rotate: inverted ? 180 : 0 }}
